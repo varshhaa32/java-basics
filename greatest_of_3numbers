@@ -1,0 +1,27 @@
+//to check the greatest of three numbers
+import java.util.Scanner;
+public class greatest_of_3num
+{
+    public static void main(String[] args)
+    {
+       Scanner reader=new Scanner(System.in);
+       System.out.println("enter the value of a");
+       int a=reader.nextInt();
+       System.out.println("enter the value of b:");
+       int b=reader.nextInt();
+       System.out.println("enter value of c:");
+       int c=reader.nextInt();
+       if(a>=b&&a>=c)
+       {
+           System.out.println("a is greatest:"+a);
+       }
+       else if(b>=a&&b>=c)
+       {
+           System.out.println("b is greatest:"+b);
+       }
+       else
+       {
+           System.out.println("c is greatest:"+c);
+       }
+    }
+}
