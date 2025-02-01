@@ -1,0 +1,39 @@
+public class simple-calculator
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in)
+        int a,b,ch;
+        double out;
+        System.out.println("Enter first number:");
+        a=sc.nextint();
+        System.out.println("Enter the second number smaller than the first number");
+        b=sc.nextInt();
+        System.out.println("Enter any number from 1 to 5");
+        ch=sc.nextint();
+        switch(ch)
+        {
+            case 1:
+            out=a+b;
+            System.out.println("The addition of given two numbers is:"+out);
+            break;
+            case 2:
+            out=a-b;
+            System.out.println("The difference of given two numbers is:"+out);
+            break;
+            case 3:
+            out=a*b;
+            System.out.println("The product of two numbers is:"+out);
+            break;
+            case 4:
+            out=a/b;
+            System.out.println("The quotient of two numbers is:"+out);
+            break;
+            case 5:
+            out=a%b;
+            System.out.println("The modulus of two numbers is"+out);
+            break;
+
+        }
+    }
+}
