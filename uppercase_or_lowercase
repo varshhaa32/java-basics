@@ -1,0 +1,20 @@
+//uppercase,lowercase,or special character
+import java.util.Scanner;
+ class uppercase_lowercase
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.print("enter a character:\t");
+        char c=input.next().charAt(0);
+        if(c>='A' && c<='Z')
+          System.out.println("it is an uppercase alphabet");
+        else if(c>='a' && c<='z')
+          System.out.println("it is a lowercase alphabet");
+        else if(c>='0' && c<='9')
+          System.out.println("it is a digit");
+        else 
+          System.out.println("it is a special character");
+        
+    }
+}
