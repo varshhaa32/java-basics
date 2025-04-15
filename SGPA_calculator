@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class CalculateSGPA {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of subjects: ");
+        int n = scanner.nextInt();
+
+        double totalGradePoints = 0;
+        double totalCreditPoints = 0;
+
+         for (int i = 1; i <= n; i++) {
+            System.out.print("Enter Grade Point for subject " + i + ": ");
+            double gradePoint = scanner.nextDouble();
+
+            System.out.print("Enter Credit Point for subject " + i + ": ");
+            double creditPoint = scanner.nextDouble();
+
+            // total grade points and credit points
+            totalGradePoints += gradePoint * creditPoint;
+            totalCreditPoints += creditPoint;
+        }
+
+        // Calculate SGPA
+        double sgpa = totalGradePoints / totalCreditPoints;
+
+        // Display the result
+        System.out.printf("Your SGPA is: %.2f%n", sgpa);
+
+        scanner.close();
+    }
+}
+
+    
+   
